@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #313131;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px
+}
+
+
+
+h1 {
+    font-family: "Anton", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    color: #ff7700;
+}
+
+h2 {
+    font-family: "Anton", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #ffffff;
+}
+
+/*MENU*/
+.inicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar header {
+    margin: auto;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-main {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background: #bbbfc067;
+    opacity: o.8;
+    border-radius: 20px;
+}
+
+.navbar header .logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar header ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar header nav ul li a.active {
+    color: #fa7900;
+    font-size: large;
+    transition: 1s;
+}
+
+.navbar header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.navbar .nav-responsive img {
+    margin: 1.5rem;
+    text-decoration: none;
+    height: 40px;
+    display: none;
+}
+
+/*INICIO*/
+#inicio {
+    background-image: url('/assets/jpg/ConferenceRoom.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#inicio:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.content .init h1 {
+    color: #ff7700;
+    position: relative;
+}
+
+.content .imagen img {
+    height: 500px;
+    position: relative;
+}
+
+/* NOSOTROS */
+.intro {
+    margin: 2.5rem;
+    display: flex;
+}
+
+.titulo .text {
+    margin: 50px;
+}
+
+#contenido {
+    margin: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: #ffffff40;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+
+#contenido .text {
+    margin: 5px;
+    border-color: solid black;
+    margin: 20px;
+    text-align: left;
+}
+
+.titulo {
+    text-align: center;
+    width: 100%;
+}
+
+.cont {
+    margin: 2.5rem;
+    display: flex;
+}
+
+#cont {
+    display: grid;
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 450px;
+}
+
+.cont .text {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont .img img {
+    height: 400px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.cont .img iframe {
+    border-radius: 10px;
+}
+
+/* Logos contactos */
+ul {
+    list-style: none;
+}
+
+.example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+}
+
+.example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    color: #484848;
+    background-color: #ffffff6b;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+    color: #ffffff;
+}
+
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="Facebook"] .filled,
+.example-2 .icon-content a[data-social="Facebook"]~.tooltip {
+    background: #1877F2;
+
+}
+
+.example-2 .icon-content a[data-social="Instagram"] .filled,
+.example-2 .icon-content a[data-social="Instagram"]~.tooltip {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+
+}
+
+.example-2 .icon-content a[data-social="WhatsApp"] .filled,
+.example-2 .icon-content a[data-social="WhatsApp"]~.tooltip {
+    background: #25D366;
+
+}
+
+.example-2 .icon-content a[data-social="TikTok"] .filled,
+.example-2 .icon-content a[data-social="TikTok"]~.tooltip {
+    background-color: #252525;
+}
+
+/*SLIDER*/
+.slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    justify-items: center;
+}
+
+.gallery {
+    display: flex;
+    width: 800px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cards {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.cards li {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.cards li img {
+    width: 800px;
+    /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 400px;
+    /* Ajusta la altura según tu necesidad */
+    object-fit: cover;
+    /* Recorta la imagen para llenar el espacio sin deformarse */
+    border-radius: 10px;
+    /* Bordes redondeados opcionales */
+}
+
+/* Botones de navegación */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Contenedor del texto */
+.slide-text {
+    position: absolute;
+    bottom: 10px;
+    /* Posición en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    /* Fondo semitransparente */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+}
+
+/* clientes */
+.carousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 93%;
+    overflow: hidden;
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    color: white;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    /*sombreado*/
+    padding: 20px;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+}
+
+.carousel {
+    >* {
+        flex: 0 0 100%;
+    }
+}
+
+.group, .group2 {
+    display: flex;
+    gap: 20px;
+    /* Agrega padding a la derecha para crear un espacio entre la última y la primera tarjeta. */
+    padding-right: 20px;
+}
+
+.group {
+    will-change: transform;
+    /* Deberíamos ser amables con el navegador: hazle saber qué vamos a animar. */
+    animation: scrolling 35s linear infinite;
+}
+
+.group2 {
+    will-change: transform;
+    /* Deberíamos ser amables con el navegador: hazle saber qué vamos a animar. */
+    animation: scrolling2 35s linear infinite;
+}
+
+.group .card img {
+    height: 150px;
+}
+
+.group2 .card img {
+    height: 70px;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrolling2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.container{
+    margin: 30px;
+}
+.info img {
+    height: 40px;
+    vertical-align: middle;
+    margin: 8px;
+}
+
+.info #contact {
+    display: flex;
+    justify-content: center;
+}
+
+.info #contact a {
+    text-decoration: none;
+}
+
+/* Boton de chat */
+.chat {
+    position: fixed;
+    width: 0;
+    top: 93%;
+    left: 88%;
+    z-index: 98;
+
+}
